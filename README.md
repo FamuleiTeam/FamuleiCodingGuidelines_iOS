@@ -200,6 +200,17 @@ NSString * const FMLFooDidBecomeBarNotification = @"FMLFooDidBecomeBarNotificati
 (void)signViewController:(FMLSignViewController *)signViewController didClickxxx:(NSString *)parameter
 ```
 
+## 原始数据类型
+推荐使用`NSUInteger`这类Apple定义的数据类型.
+如 
+```
+int -> NSInteger
+unsigned -> NSUInteger
+float -> CGFloat
+动画时间 -> NSTimeInterval
+```
+
+
 
 
 ## Pragma
