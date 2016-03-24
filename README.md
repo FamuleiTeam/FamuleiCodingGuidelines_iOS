@@ -210,6 +210,15 @@ float -> CGFloat
 动画时间 -> NSTimeInterval
 ```
 
+## 枚举
+推荐使用`NS_ENUM`
+```
+typedef NS_ENUM(NSInteger, FMLxxx)
+{
+
+}
+```
+
 
 
 
