@@ -171,13 +171,13 @@ UIApplication.sharedApplication.delegate;
 
 
 
-# Categories
+## Categories
 
  category 方法和属性前加上自己的小写前缀以及下划线，比如`- (id)fml_myCategoryMethod`
 
 
 
-# NSNotification
+## NSNotification
 
 当你定义你自己的 `NSNotification` 的时候你应该把你的通知的名字定义为一个字符串常量，就像你暴露给其他类的其他字符串常量一样。你应该在公开的接口文件中将其声明为 `extern` 的， 并且在对应的实现文件里面定义。
 
@@ -191,6 +191,13 @@ extern NSString * const FMLFooDidBecomeBarNotification
 
 // Foo.m
 NSString * const FMLFooDidBecomeBarNotification = @"FMLFooDidBecomeBarNotification";
+```
+
+## 协议
+如果类名为`FMLSignViewController`那么，协议用来返回用户点击事件，那么协议最好使用
+
+```
+(void)signViewController:(FMLSignViewController *)signViewController didClickxxx:(NSString *)parameter
 ```
 
 
