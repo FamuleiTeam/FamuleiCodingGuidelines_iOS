@@ -12,7 +12,10 @@
 
 ## 命名
 
-  推荐使用长的、描述性的方法和变量名。尽量写全，* 针对不同视图控制器，在末尾添加后缀，eg：
+  推荐使用长的、描述性的方法和变量名。尽量写全，
+  
+  
+     * 针对不同视图控制器，在末尾添加后缀，eg：
      * UIViewController  后缀添加“ViewController”
      * UIView 后缀添加“View”
      * UIButton 后缀添加“Button"
