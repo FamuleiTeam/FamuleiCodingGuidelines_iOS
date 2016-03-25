@@ -12,7 +12,11 @@
 
 ## 命名
 
-  推荐使用长的、描述性的方法和变量名。尽量写全，
+  推荐使用长的、描述性的方法和变量名。尽量写全，* 针对不同视图控制器，在末尾添加后缀，eg：
+     * UIViewController  后缀添加“ViewController”
+     * UIView 后缀添加“View”
+     * UIButton 后缀添加“Button"
+     * UILabel 后缀添加“Label"
 
 **推荐:**
 
@@ -224,9 +228,21 @@ typedef NS_ENUM(NSInteger, FMLxxx)
 
 ## Pragma
 
-### Pragma Mark
+### Pragma Mark - Mark Name对方法进行分组
 
-`#pragma mark -`  是一个在类内部组织代码并且帮助你分组方法实现的好办法。
+
+     * #pragma mark - View lifeCycle
+     * #pragma mark - Getter/Setter
+     * #pragma mark - Init methods
+     * #pragma mark - Action methods
+     * #pragma mark - Common methods
+     * #pragma mark - UIActionSheetDelegate
+     * #pragma mark - UIImagePickerControllerDelegate
+     * #pragma mark - UITableViewDelegate Methods
+     * #pragma mark - UITableViewDataSource Methods
+     * #pragma mark - UIScrollViewDelegate Methods
+     * #pragma mark - UITextFieldDelegate Methods
+     * #pragma mark - UITextViewDelegate Methods
 
 
 
